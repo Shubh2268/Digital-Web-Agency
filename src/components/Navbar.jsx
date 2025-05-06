@@ -17,7 +17,7 @@ const Navbar = () => {
                     {navLinks.map((link) => (
                         <a key={link} href={link} className='text-gray-700 hover:text-blue-600 font-medium transition capitalize'>{link}</a>
                     ))}
-                    <a href='#contact' className='ml-4 px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition capitalize'>contact us</a>
+                    <a href='#contact' className='ml-4 px-5 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition capitalize'>contact us</a>
                 </nav>
 
                 {/* Mobile Menu Icon */}
