@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,9 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <nav className='hidden md:flex space-x-8 items-center'>
                     {navLinks.map((link) => (
-                        <a key={link} href={link} className='text-gray-700 font-medium transition capitalize'>{link}</a>
+                        <Link key={link} to={link} className='text-gray-700 font-medium transition capitalize'>{link}</Link>
                     ))}
-                    <a href='#contact' className='px-5 py-2 bg-[#1090CB] text-white font-medium rounded-md transition'>Contact Us</a>
+                    <Link to='/contact' className='px-5 py-2 bg-[#1090CB] text-white font-medium rounded-md transition active:scale-95 ease-in duration-300'>Contact Us</Link>
                 </nav>
 
                 {/* Mobile Menu Icon */}

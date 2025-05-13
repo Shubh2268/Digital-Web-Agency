@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div>
+    <div className='flex items-center justify-center h-screen'>
       Contact
     </div>
   )
