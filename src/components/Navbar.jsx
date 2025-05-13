@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react'; 
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +7,7 @@ const Navbar = () => {
     const navLinks = ['home', 'about us', 'services', 'blog'];
 
     return (
-        <header className='w-full fixed top-0 left-0 z-50 bg-white shadow-sm'>
+        <header className='w-full fixed top-0 left-0 z-50 bg-white'>
             <div className='mx-auto px-4 md:px-8 flex items-center justify-between h-16'>
                
                 <div className='text-2xl font-bold text-[#1090CB]'>Digitra</div>
@@ -41,4 +41,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navbar
