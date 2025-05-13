@@ -35,7 +35,7 @@ const Navbar = () => {
                     {navLinks.map((link) => (
                         <a key={link} href={link} className='block py-2 text-gray-700 font-medium transition capitalize'>{link}</a>
                     ))}
-                    <a href='#contact' className='mt-2 inline-block w-fit text-center px-4 py-2 bg-[#1090CB] text-white rounded-md transition capitalize'>contact us</a>
+                    <a href='#contact' className='mt-2 inline-block w-fit text-center px-4 py-2 bg-[#1090CB] text-white rounded-md font-medium transition capitalize'>contact us</a>
                 </div>
             )}
         </header>
