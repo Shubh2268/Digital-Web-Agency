@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react'
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const navLinks = ['home', 'about us', 'services', 'blog'];
+    const navLinks = ['home', 'about', 'services', 'blog'];
 
     return (
         <header className='w-full fixed top-0 left-0 z-50 bg-white'>
