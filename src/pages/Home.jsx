@@ -52,9 +52,9 @@ const Home = () => {
       </div>
 
       {/* Service Details  */}
-      <div>
-        <h2>Delivering Tailored Digital Solutions to Empower Your Business</h2>
-        <p>Explore the range of services we offer to help you grow, innovate, and lead in the digital space.</p>
+      <div className='flex flex-col py-20 items-center justify-center'>
+        <h2 className='font-bold text-[#252525] text-3xl'>Crafting Impactful Digital Experiences That Scale</h2>
+        <p className='py-3 text-gray-500 w-2/5 text-center'>We offer a range of modern digital services designed to elevate your brand, optimize operations, and deliver meaningful results in a rapidly evolving online world.</p>
       </div>
     </div>
   )
