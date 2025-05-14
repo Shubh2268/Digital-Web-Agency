@@ -39,7 +39,7 @@ const Home = () => {
       <Hero />
 
       {/* Services  */}
-      <div className='grid md:grid-cols-2 lg:grid-cols-4 p-10 gap-y-4'>
+      <div className='grid md:grid-cols-2 lg:grid-cols-4 p-10 gap-y-4 border-b-2 border-gray-300'>
         {services.map(({ id, icon, title, description, style }) => (
           <div key={id} className='flex items-center justify-center'>
             <div className={'p-4 rounded-2xl' + ' ' + style}>{icon}</div>
@@ -49,6 +49,12 @@ const Home = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Service Details  */}
+      <div>
+        <h2>Delivering Tailored Digital Solutions to Empower Your Business</h2>
+        <p>Explore the range of services we offer to help you grow, innovate, and lead in the digital space.</p>
       </div>
     </div>
   )
