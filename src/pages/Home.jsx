@@ -63,29 +63,29 @@ const Home = () => {
 
       <div>
         <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-3 md:gap-12 py-10'>
-          <TextCard heading='Building Seamless Mobile Experiences' description="We create high-performance mobile applications tailored to your business goals and user needs, Whether it's iOS Android, or cross-platform, our apps combine sleek design with robust functionality to keep your brand connected, accessible, and competitive in the mobile-first world." className='w-full md:w-2/5' />
+          <TextCard heading='Building Seamless Mobile Experiences' description="We create high-performance mobile applications tailored to your business goals and user needs, Whether it's iOS Android, or cross-platform, our apps combine sleek design with robust functionality to keep your brand connected, accessible, and competitive in the mobile-first world." className='w-full md:w-2/5' head_class='font-bold text-gray-800 text-xl md:text-3xl' desc_class='text-gray-600 py-2' />
           <img src={mobileImg} alt='mobile-application' className='w-full max-w-md mx-auto lg:max-w-xl' />
         </div>
 
         <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row-reverse items-center gap-3 md:gap-12 py-10'>
-          <TextCard heading='Custom Web Solutions That Scale With You' description="We build secure, scalable, and high-performing web applications tailored to your business needs. From dynamic dashboards to full-fledged platforms, our solutions combine modern technology with seamless user experience to help you grow, adapt, and lead in the digital space." className='w-full md:w-2/5' />
+          <TextCard heading='Custom Web Solutions That Scale With You' description="We build secure, scalable, and high-performing web applications tailored to your business needs. From dynamic dashboards to full-fledged platforms, our solutions combine modern technology with seamless user experience to help you grow, adapt, and lead in the digital space." className='w-full md:w-2/5' head_class='font-bold text-gray-800 text-xl md:text-3xl' desc_class='text-gray-600 py-2' />
           <img src={webImg} alt='web-solution' className='w-full max-w-md mx-auto' />
         </div>
 
         <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-3 md:gap-12 py-10'>
-          <TextCard heading='Immersive AR/VR Experiences That Redefine Interaction' description="We craft cutting-edge augmented and virtual reality solutions that transform how users engage with digital environments. From virtual tours to interactive product showcases, our AR/VR applications bring stories, services, and spaces to life—enhancing engagement, training, and customer experience across industries." className='w-full md:w-2/5' />
+          <TextCard heading='Immersive AR/VR Experiences That Redefine Interaction' description="We craft cutting-edge augmented and virtual reality solutions that transform how users engage with digital environments. From virtual tours to interactive product showcases, our AR/VR applications bring stories, services, and spaces to life—enhancing engagement, training, and customer experience across industries." className='w-full md:w-2/5' head_class='font-bold text-gray-800 text-xl md:text-3xl' desc_class='text-gray-600 py-2' />
           <img src={VRImg} alt='AR/VR-solution' className='w-full max-w-md mx-auto' />
         </div>
       </div>
 
       {/* Additional Services  */}
         <div className='w-full lg:max-w-7xl mx-auto flex flex-col md:flex-row gap-3 md:gap-12 my-20'>
-          <div className='text-center my-5'>
-            <TextCard heading='Reliable Support That Has Your Back' description="From project kickoff to post-launch, our team is always here for you. We believe in clear communication, fast responses, and ongoing guidance—so you're never left wondering what's next or dealing with issues alone." />
+          <div className='text-center my-5 p-14 bg-gray-200 rounded-lg'>
+            <TextCard heading='Reliable Support That Has Your Back' description="From project kickoff to post-launch, our team is always here for you. We believe in clear communication, fast responses, and ongoing guidance—so you're never left wondering what's next or dealing with issues alone." head_class='text-xl md:text-2xl font-bold text-gray-800 py-2' desc_class='text-gray-700 py-2' />
             <button>View More</button>
           </div>
-          <div className='text-center my-5'>
-            <TextCard heading='Digital Strategy Rooted in Your Goals' description="Before writing a single line of code, we help you shape a clear digital roadmap. Our consultative approach ensures your vision aligns with real-world user needs and business growth—turning ideas into actionable, scalable solutions." />
+          <div className='text-center my-5 p-14 bg-[#1090CB] rounded-lg'>
+            <TextCard heading='Digital Strategy Rooted in Your Goals' description="Before writing a single line of code, we help you shape a clear digital roadmap. Our consultative approach ensures your vision aligns with real-world user needs and business growth—turning ideas into actionable, scalable solutions." head_class='text-xl md:text-2xl font-bold text-gray-100 py-2' desc_class='text-gray-100 py-2' />
             <button>View More</button>
           </div>
         </div>

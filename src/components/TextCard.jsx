@@ -1,9 +1,9 @@
 
-const TextCard = ({ heading, description, className }) => {
+const TextCard = ({ heading, description, className, head_class, desc_class }) => {
     return (
         <div className={className}>
-            <h2 className='font-bold text-gray-800 text-xl md:text-3xl'>{heading}</h2>
-            <p className='text-gray-600 py-2'>{description}</p>
+            <h2 className={head_class}>{heading}</h2>
+            <p className={desc_class}>{description}</p>
         </div>
     )
 }
