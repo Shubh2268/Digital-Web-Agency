@@ -3,6 +3,7 @@ import { LayoutDashboard, Tag, RectangleGoggles, Smartphone } from 'lucide-react
 import TextCard from '../components/TextCard'
 import mobileImg from '../assets/home/mobileImg.png'
 import webImg from '../assets/home/webImg.png'
+import VRImg from '../assets/home/VRImg.png'
 
 const Home = () => {
 
@@ -61,14 +62,19 @@ const Home = () => {
       </div>
 
       <div>
-        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12'>
+        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-3 md:gap-12 py-10'>
           <TextCard heading='Building Seamless Mobile Experiences' description="We create high-performance mobile applications tailored to your business goals and user needs, Whether it's iOS Android, or cross-platform, our apps combine sleek design with robust functionality to keep your brand connected, accessible, and competitive in the mobile-first world." className='w-full md:w-2/5' />
           <img src={mobileImg} alt='mobile-application' className='w-full max-w-md mx-auto lg:max-w-xl' />
         </div>
 
-        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row-reverse items-center gap-12'>
+        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row-reverse items-center gap-3 md:gap-12 py-10'>
           <TextCard heading='Custom Web Solutions That Scale With You' description="We build secure, scalable, and high-performing web applications tailored to your business needs. From dynamic dashboards to full-fledged platforms, our solutions combine modern technology with seamless user experience to help you grow, adapt, and lead in the digital space." className='w-full md:w-2/5' />
-          <img src={webImg} alt='web-application' className='w-full max-w-md mx-auto lg:max-w-lg' />
+          <img src={webImg} alt='web-solution' className='w-full max-w-md mx-auto' />
+        </div>
+
+        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-3 md:gap-12 py-10'>
+          <TextCard heading='Immersive AR/VR Experiences That Redefine Interaction' description="We craft cutting-edge augmented and virtual reality solutions that transform how users engage with digital environments. From virtual tours to interactive product showcases, our AR/VR applications bring stories, services, and spaces to life—enhancing engagement, training, and customer experience across industries." className='w-full md:w-2/5' />
+          <img src={VRImg} alt='AR/VR-solution' className='w-full max-w-md mx-auto' />
         </div>
       </div>
     </div>
