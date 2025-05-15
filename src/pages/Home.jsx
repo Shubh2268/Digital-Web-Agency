@@ -96,7 +96,7 @@ const Home = () => {
 
       {/* Brands  */}
       <div className='flex flex-col items-center justify-center mx-4 md:mx-auto'>
-        <h2 className='text-gray-800 font-semibold text-2xl my-3'>Companies, we have worked with</h2>
+        <h2 className='text-gray-800 font-semibold text-xl md:text-2xl my-3'>Companies, we have worked with</h2>
         <div className='w-full lg:max-w-7xl flex flex-wrap items-center justify-center'>
           <img src={brand4} alt="brand4" className='w-[80px] md:w-[180px] 182 md:m-6' />
           <img src={brand3} alt="brand3" className='w-[80px] md:w-[180px] 182 md:m-6' />
