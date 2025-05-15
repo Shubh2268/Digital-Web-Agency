@@ -77,6 +77,19 @@ const Home = () => {
           <img src={VRImg} alt='AR/VR-solution' className='w-full max-w-md mx-auto' />
         </div>
       </div>
+
+      {/* Additional Services  */}
+        <div className='w-full lg:max-w-7xl mx-auto flex flex-col md:flex-row gap-3 md:gap-12 my-20'>
+          <div className='text-center my-5'>
+            <TextCard heading='Reliable Support That Has Your Back' description="From project kickoff to post-launch, our team is always here for you. We believe in clear communication, fast responses, and ongoing guidance—so you're never left wondering what's next or dealing with issues alone." />
+            <button>View More</button>
+          </div>
+          <div className='text-center my-5'>
+            <TextCard heading='Digital Strategy Rooted in Your Goals' description="Before writing a single line of code, we help you shape a clear digital roadmap. Our consultative approach ensures your vision aligns with real-world user needs and business growth—turning ideas into actionable, scalable solutions." />
+            <button>View More</button>
+          </div>
+        </div>
+
     </div>
   )
 }
