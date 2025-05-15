@@ -55,14 +55,14 @@ const Home = () => {
 
       {/* Service Details  */}
       <div className='flex flex-col py-20 items-center justify-center'>
-        <h2 className='font-bold text-[#252525] text-3xl'>Crafting Impactful Digital Experiences That Scale</h2>
-        <p className='py-3 text-gray-500 w-2/5 text-center'>We offer a range of modern digital services designed to elevate your brand, optimize operations, and deliver meaningful results in a rapidly evolving online world.</p>
+        <h2 className='font-bold text-[#252525] text-2xl md:text-3xl lg:text-4xl text-center'>Crafting Impactful Digital Experiences That Scale</h2>
+        <p className='py-3 text-gray-600 w-full md:w-2/5 text-center'>We offer a range of modern digital services designed to elevate your brand, optimize operations, and deliver meaningful results in a rapidly evolving online world.</p>
       </div>
 
       <div>
-        <div className='flex items-center justify-center'>
+        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12'>
           <TextCard heading='Building Seamless Mobile Experiences' description="We create high-performance mobile applications tailored to your business goals and user needs, Whether it's iOS Android, or cross-platform, our apps combine sleek design with robust functionality to keep your brand connected, accessible, and competitive in the mobile-first world." className='w-full md:w-2/5' />
-          <img src={mobileImg} alt='mobile-application' />
+          <img src={mobileImg} alt='mobile-application' className='w-full max-w-md mx-auto lg:max-w-xl' />
         </div>
       </div>
     </div>
