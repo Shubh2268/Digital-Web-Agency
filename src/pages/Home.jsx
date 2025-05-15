@@ -82,11 +82,11 @@ const Home = () => {
         <div className='w-full lg:max-w-7xl mx-auto flex flex-col md:flex-row gap-3 md:gap-12 my-20'>
           <div className='text-center mx-2 md:mx-0 my-5 p-8 md:p-14 bg-gray-200 rounded-xl'>
             <TextCard heading='Reliable Support That Has Your Back' description="From project kickoff to post-launch, our team is always here for you. We believe in clear communication, fast responses, and ongoing guidance—so you're never left wondering what's next or dealing with issues alone." head_class='text-xl md:text-2xl font-bold text-gray-800 py-2' desc_class='text-gray-700 py-2' />
-            <button className='my-4 bg-[#1090CB] text-white px-7 py-2 font-medium rounded-lg'>View More</button>
+            <button className='my-4 bg-[#1090CB] text-white px-7 py-2 font-medium rounded-lg active:scale-95 transition duration-300 cursor-pointer'>View More</button>
           </div>
           <div className='text-center mx-2 md:mx-0 my-5 p-8 md:p-14 bg-[#1090CB] rounded-xl'>
             <TextCard heading='Digital Strategy Rooted in Your Goals' description="Before writing a single line of code, we help you shape a clear digital roadmap. Our consultative approach ensures your vision aligns with real-world user needs and business growth—turning ideas into actionable, scalable solutions." head_class='text-xl md:text-2xl font-bold text-gray-100 py-2' desc_class='text-gray-100 py-2' />
-            <button className='my-4 bg-gray-100 text-[#1090CB] px-7 py-2 font-medium rounded-lg'>View More</button>
+            <button className='my-4 bg-gray-100 text-[#1090CB] px-7 py-2 font-medium rounded-lg active:scale-95 transition duration-300 cursor-pointer'>View More</button>
           </div>
         </div>
 
