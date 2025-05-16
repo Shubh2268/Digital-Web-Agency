@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { MdMenu } from 'react-icons/md';
+import { RxCross2 } from 'react-icons/rx';
 import { Link } from 'react-router';
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
                 {/* Mobile Menu Icon */}
                 <div className='md:hidden'>
                     <button onClick={() => setIsOpen(!isOpen)}>
-                        {isOpen ? <X size={28} /> : <Menu size={28} />}
+                        {isOpen ? <RxCross2 size={28} /> : <MdMenu size={28} />}
                     </button>
                 </div>
             </div>
@@ -35,7 +36,7 @@ const Navbar = () => {
                     {navLinks.map((link) => (
                         <a key={link} href={link} className='block py-2 text-gray-700 font-medium transition capitalize'>{link}</a>
                     ))}
-                    <a href='#contact' className='mt-2 inline-block w-fit text-center px-4 py-2 bg-[#1090CB] text-white rounded-md font-medium transition capitalize'>contact us</a>
+                    <Link to='/contact' className='mt-2 inline-block w-fit text-center px-4 py-2 bg-[#1090CB] text-white rounded-md font-medium transition capitalize'>contact us</Link>
                 </div>
             )}
         </header>

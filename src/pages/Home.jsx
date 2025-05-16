@@ -1,5 +1,8 @@
 import Hero from '../components/Hero'
-import { LayoutDashboard, Tag, RectangleGoggles, Smartphone } from 'lucide-react'
+import { MdDashboard } from "react-icons/md";
+import { TbSeo } from "react-icons/tb";
+import { PiVirtualReality } from "react-icons/pi";
+import { FiSmartphone } from "react-icons/fi";
 import TextCard from '../components/TextCard'
 import mobileImg from '../assets/home/mobileImg.png'
 import webImg from '../assets/home/webImg.png'
@@ -14,28 +17,28 @@ const Home = () => {
   const services = [
     {
       id: 1,
-      icon: <LayoutDashboard />,
+      icon: <MdDashboard />,
       title: 'Web Application',
       description: 'Modern, scalable web apps',
       style: 'bg-[#EFEAFF] text-[#4628A4]'
     },
     {
       id: 2,
-      icon: <Tag />,
+      icon: <TbSeo />,
       title: 'SEO',
       description: 'Boost search visibility',
       style: 'bg-[#ECFFDA] text-[#5FC300]'
     },
     {
       id: 3,
-      icon: <RectangleGoggles />,
+      icon: <PiVirtualReality />,
       title: 'AR/VR Solution',
       description: 'Immersive digital experiences',
       style: 'bg-[#DAE6FF] text-[#00329B]'
     },
     {
       id: 4,
-      icon: <Smartphone />,
+      icon: <FiSmartphone />,
       title: 'Mobile Application',
       description: 'iOS & Android apps',
       style: 'bg-[#FFE5DA] text-[#BB3800]'
