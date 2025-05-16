@@ -11,6 +11,7 @@ import brand1 from '../assets/brands/brand1.png'
 import brand2 from '../assets/brands/brand2.png'
 import brand3 from '../assets/brands/brand3.png'
 import brand4 from '../assets/brands/brand4.png'
+import Newsletter from '../components/Newsletter';
 
 const Home = () => {
 
@@ -98,7 +99,7 @@ const Home = () => {
       </div>
 
       {/* Brands  */}
-      <div className='flex flex-col items-center justify-center mx-4 md:mx-auto'>
+      <div className='flex flex-col items-center justify-center m-4 md:mx-auto'>
         <h2 className='text-gray-700 font-bold text-xl md:text-2xl my-4'>Companies, we have worked with</h2>
         <div className='w-full lg:max-w-7xl flex flex-wrap items-center justify-center'>
           <img src={brand4} alt="brand4" className='w-[80px] md:w-[180px] m-3 md:m-6' />
@@ -107,6 +108,9 @@ const Home = () => {
           <img src={brand1} alt="brand1" className='w-[80px] md:w-[180px] m-3 md:m-6' />
         </div>
       </div>
+
+      {/* Newsletter  */}
+      <Newsletter />
 
     </div>
   )
