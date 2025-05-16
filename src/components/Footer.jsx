@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
@@ -31,16 +31,16 @@ const Footer = () => {
 
                 {/* Social Links */}
                 <div className='flex items-center gap-4'>
-                    <a href='#'><FaFacebook className='text-gray-600' /></a>
-                    <a href='#'><FaInstagram className='text-gray-600' /></a>
-                    <a href='#'><FaXTwitter className='text-gray-600' /></a>
-                    <a href='#'><FaLinkedin className='text-gray-600' /></a>
+                    <a href='#' className='text-gray-900 p-2 rounded-full shadow-lg shadow-gray-300'><FaFacebookF className='w-4 h-4' /></a>
+                    <a href='#' className='text-gray-900 p-2 rounded-full shadow-lg shadow-gray-300'><FaInstagram className='w-4 h-4' /></a>
+                    <a href='#' className='text-gray-900 p-2 rounded-full shadow-lg shadow-gray-300'><FaXTwitter className=' w-4 h-4' /></a>
+                    <a href='#' className='text-gray-900 p-2 rounded-full shadow-lg shadow-gray-300'><FaLinkedinIn className='w-4 h-4' /></a>
                 </div>
             </div>
 
-            <hr className='text-gray-400 my-5' />
+            <hr className='text-gray-400 my-10' />
 
-            <div className='my-2 text-center text-gray-600'>
+            <div className='text-center text-gray-600'>
                 Copyright © {new Date().getFullYear()} Digitra. All rights reserved.
             </div>
         </footer>
