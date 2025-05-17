@@ -1,11 +1,15 @@
 
 const Newsletter = () => {
     return (
-        <div className='bg-[#E8F4FA] py-36 flex flex-col items-center justify-center'>
+        <div className='bg-[#E8F4FA] py-20 md:py-36 mt-10 flex flex-col items-center justify-center'>
+            
             <h2 className='text-xl md:text-3xl font-bold w-full md:w-2/5 px-4 text-center text-gray-800'>Stay informed with the latest News, Tips, and Updates</h2>
-            <div className='flex flex-col md:flex-row mt-10 w-2/5'>
-                <input type='text' placeholder='Enter your email' className='bg-white rounded-lg outline-none py-3 px-5 w-full mr-2' />
-                <button className='px-5 py-3 bg-black text-gray-100 text-xs font-semibold uppercase rounded-lg cursor-pointer active:scale-95 transition duration-300'>subscribe</button>
+
+            <div className='flex flex-col md:flex-row items-center justify-center gap-5 md:gap-2 mt-10 w-4/5 md:w-2/5'>
+
+                <input type='text' placeholder='Enter your email...' className='bg-white rounded-lg outline-none py-3 px-5 w-full' />
+
+                <button className='w-fit px-5 py-3 md:py-4 bg-black text-white text-xs font-semibold uppercase rounded-lg cursor-pointer active:scale-95 transition duration-300'>subscribe</button>
             </div>
         </div>
     )
