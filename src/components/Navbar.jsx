@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <header className='w-full fixed top-0 left-0 z-50 bg-white'>
-            <div className='mx-auto px-4 md:px-8 flex items-center justify-between h-16'>
+            <div className='mx-auto px-4 md:px-10 flex items-center justify-between h-16'>
                
                 <div className='text-2xl font-bold text-[#1090CB]'>Digitra</div>
 
