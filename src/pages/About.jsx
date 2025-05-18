@@ -9,19 +9,23 @@ const About = () => {
     <section className='max-w-7xl mx-auto py-20'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 items-start'>
 
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-end'>
           <img src={RectangleImg1} alt='about_img1' className='mx-2' />
           <img src={RectangleImg2} alt='about_img2' className='mx-2' />
         </div>
 
         <div>
           <h1 className='text-[#1090CB] text-xl font-semibold'>About us</h1>
-          <TextCard heading='Driving Digital Transformation with Creativity, Strategy & Technology' description="At Digitra, we turn bold ideas into scalable digital solutions. Our team blends creativity, strategy, and technology to deliver experiences that engage users and elevate brands. From startups to enterprises, we help businesses unlock their full potential in the digital era." />
+          <TextCard heading='Driving Digital Transformation with Creativity, Strategy & Technology' description="At Digitra, we combine design thinking, cutting-edge technology, and a passion for innovation to help businesses grow and thrive in the digital world. Our team of strategists, designers, and developers work closely with clients to turn ideas into impactful, user-focused digital experiences. From concept to launch, we ensure every detail aligns with your brand vision and user needs." head_class='text-xl font-bold text-gray-800 my-4 w-full md:w-4/5' desc_class='my-4 text-gray-600 w-full md:w-4/5' />
         </div>
 
-        <img src={RectangleImg3} alt='about_img3' />
+        <div className='flex items-start justify-center'>
+          <img src={RectangleImg3} alt='about_img3' />
+        </div>
 
-        <img src={RectangleImg4} alt='about_img4' />
+        <div>
+          <img src={RectangleImg4} alt='about_img4' />
+        </div>
 
       </div>
     </section>
