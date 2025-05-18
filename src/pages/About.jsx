@@ -7,6 +7,7 @@ import TextCard from '../components/TextCard';
 const About = () => {
   return (
     <div>
+      {/* Top  */}
       <div className='max-w-7xl mx-auto pt-28 md:pt-32'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-9 gap-y-3 items-start lg:m-10 xl:m-0'>
 
@@ -30,6 +31,12 @@ const About = () => {
 
         </div>
       </div>
+
+      {/* Heading  */}
+      <div>
+        <TextCard heading='Crafting Digital Journeys That Drive Impact, Innovation, and Identity' />
+      </div>
+
     </div>
   );
 };
