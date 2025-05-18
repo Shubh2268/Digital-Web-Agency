@@ -33,8 +33,8 @@ const About = () => {
       </div>
 
       {/* Heading  */}
-      <div>
-        <TextCard heading='Crafting Digital Journeys That Drive Impact, Innovation, and Identity' />
+      <div className='my-20'>
+        <TextCard heading='Crafting digital journeys that drive impact, innovation, and identity' description="At Digitra, we specialize in turning ideas into immersive digital experiences that captivate, convert, and grow with your brand. From intuitive user interfaces to performance-driven web solutions, we merge creativity with strategy to help businesses make a lasting impression. Our team is driven by innovation, fueled by collaboration, and committed to delivering work that speaks volumes in a digital-first world." className='flex flex-col items-center justify-center' head_class='font-bold text-[#252525] text-2xl md:text-3xl lg:text-4xl text-center mx-2 lg:mx-0' desc_class='py-3 text-gray-600 w-full md:w-3/5 text-center' />
       </div>
 
     </div>
