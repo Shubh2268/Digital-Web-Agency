@@ -71,7 +71,7 @@ const About = () => {
       </div>
 
       {/* Bottom  */}
-      <div className='flex flex-col md:flex-row items-center justify-center my-24'>
+      <div className='flex flex-col md:flex-row items-center justify-center mt-20 mb-32'>
         <div className='w-full md:w-1/2 md:ml-20'>
           <TextCard heading='Driven by Creativity, Focused on Results' description="We believe in creating more than just beautiful interfaces — we build meaningful digital experiences. Our multidisciplinary team collaborates with forward-thinking brands to craft solutions that engage, inspire, and deliver real results. By blending creativity with strategy and technology, we help businesses grow with confidence in the digital era." className='flex flex-col items-start' head_class='py-5 text-xl md:text-2xl font-bold text-gray-700' desc_class='w-[90%] text-gray-600' />
 
