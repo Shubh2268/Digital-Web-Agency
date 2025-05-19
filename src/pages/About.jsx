@@ -71,14 +71,14 @@ const About = () => {
       </div>
 
       {/* Bottom  */}
-      <div className='flex flex-col md:flex-row items-center justify-center'>
-        <div className='w-full md:w-1/2 md:ml-14'>
-          <TextCard heading='Driven by Creativity, Focused on Results' description="We turn ideas into impactful digital solutions. Through a blend of design, strategy, and technology, we help brands grow, connect, and stand out in an ever-evolving digital landscape." className='flex flex-col items-start' head_class='py-5 text-xl md:text-2xl font-bold text-gray-700' desc_class='w-3/5 text-gray-600' />
+      <div className='flex flex-col md:flex-row items-center justify-center my-24'>
+        <div className='w-full md:w-1/2 md:ml-20'>
+          <TextCard heading='Driven by Creativity, Focused on Results' description="We believe in creating more than just beautiful interfaces — we build meaningful digital experiences. Our multidisciplinary team collaborates with forward-thinking brands to craft solutions that engage, inspire, and deliver real results. By blending creativity with strategy and technology, we help businesses grow with confidence in the digital era." className='flex flex-col items-start' head_class='py-5 text-xl md:text-2xl font-bold text-gray-700' desc_class='w-[90%] text-gray-600' />
 
-          <button className='mt-5 px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300 cursor-pointer'>Contact Us</button>
+          <button className='mt-7 px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300 cursor-pointer'>Contact Us</button>
         </div>
 
-        <div className='w-full md:w-1/2 bg-white p-5'>
+        <div className='w-full md:w-1/2 bg-white shadow-lg shadow-gray-300 p-10'>
           <div className='grid grid-cols-2'>
             {services.map(({ id, title, icon, style }) => (
               <div key={id} className='flex items-center justify-center w-fit m-5'>
