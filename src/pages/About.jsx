@@ -7,6 +7,7 @@ import { CgWebsite } from 'react-icons/cg'
 import { IoIosRocket } from 'react-icons/io'
 import { CiMobile3 } from 'react-icons/ci'
 import { FaVrCardboard } from 'react-icons/fa'
+import Newsletter from '../components/Newsletter'
 
 const About = () => {
 
@@ -15,25 +16,25 @@ const About = () => {
       id: 1,
       icon: <CgWebsite />,
       title: 'Web Application',
-      style: ''
+      style: 'text-[#FF4E4E] bg-[#FFF2F2]'
     },
     {
       id: 2,
       icon: <IoIosRocket />,
       title: 'SEO',
-      style: ''
+      style: 'text-[#0073C6] bg-[#E2F3FF]'
     },
     {
       id: 3,
       icon: <CiMobile3 />,
       title: 'Mobile Application',
-      style: ''
+      style: 'text-[#6E00FA] bg-[#F1E8FF]'
     },
     {
       id: 4,
       icon: <FaVrCardboard />,
       title: 'AR/VR',
-      style: ''
+      style: 'text-[#900078] bg-[#FFE7FB]'
     }
   ]
 
@@ -70,17 +71,27 @@ const About = () => {
       </div>
 
       {/* Bottom  */}
-      <div>
-          <div className='w-full md:w-1/2 md:ml-14'>
-            <TextCard heading='Driven by Creativity, Focused on Results' description="We turn ideas into impactful digital solutions. Through a blend of design, strategy, and technology, we help brands grow, connect, and stand out in an ever-evolving digital landscape." className='flex flex-col items-start' head_class='py-5 text-xl md:text-2xl font-bold text-gray-700' desc_class='w-3/5 text-gray-600' />
+      <div className='flex flex-col md:flex-row items-center justify-center'>
+        <div className='w-full md:w-1/2 md:ml-14'>
+          <TextCard heading='Driven by Creativity, Focused on Results' description="We turn ideas into impactful digital solutions. Through a blend of design, strategy, and technology, we help brands grow, connect, and stand out in an ever-evolving digital landscape." className='flex flex-col items-start' head_class='py-5 text-xl md:text-2xl font-bold text-gray-700' desc_class='w-3/5 text-gray-600' />
 
-            <button className='mt-5 px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300 cursor-pointer'>Contact Us</button>
+          <button className='mt-5 px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300 cursor-pointer'>Contact Us</button>
+        </div>
+
+        <div className='w-full md:w-1/2'>
+          <div className='grid grid-cols-2'>
+            {services.map(({ id, title, icon, style }) => (
+              <div key={id} className='flex items-center justify-center'>
+                <div>{icon}</div>
+                <h3>{title}</h3>
+              </div>
+            ))}
           </div>
-
-          <div>
-
-          </div>
+        </div>
       </div>
+
+      {/* Newsletter  */}
+      <Newsletter />
 
     </div>
   );

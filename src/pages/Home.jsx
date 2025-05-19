@@ -52,7 +52,7 @@ const Home = () => {
 
       {/* Services  */}
       <div className='max-w-7xl mx-auto'>
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 py-10 gap-y-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-y-4'>
           {services.map(({ id, icon, title, description, style }) => (
             <div key={id} className='flex items-center justify-center'>
               <div className={'p-4 rounded-2xl' + ' ' + style}>{icon}</div>
