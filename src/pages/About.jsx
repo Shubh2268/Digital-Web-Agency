@@ -2,7 +2,7 @@ import RectangleImg1 from '../assets/about/RectangleImg1.png'
 import RectangleImg2 from '../assets/about/RectangleImg2.png'
 import RectangleImg3 from '../assets/about/RectangleImg3.png'
 import RectangleImg4 from '../assets/about/RectangleImg4.png'
-import TextCard from '../components/TextCard';
+import TextCard from '../components/TextCard'
 
 const About = () => {
   return (
@@ -41,4 +41,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About
