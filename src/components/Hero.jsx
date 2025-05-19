@@ -2,7 +2,7 @@ import heroImage from '../assets/home/heroImage.png'
 
 const Hero = () => {
     return (
-        <section className='pt-28 md:pt-24 pb-16 bg-blue-400/10'>
+        <section className='pt-28 lg:pt-24 pb-16 bg-blue-400/10'>
             <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12'>
 
                 <div className='w-full lg:w-1/2 text-center lg:text-left'>

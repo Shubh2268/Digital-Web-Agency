@@ -54,8 +54,8 @@ const Home = () => {
       <div className='max-w-7xl mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-y-4'>
           {services.map(({ id, icon, title, description, style }) => (
-            <div key={id} className='flex items-center justify-center'>
-              <div className={'p-4 rounded-2xl' + ' ' + style}>{icon}</div>
+            <div key={id} className='flex items-center justify-center w-fit mx-4 lg:mx-0'>
+              <div className={`p-4 rounded-2xl ${style}`}>{icon}</div>
               <div className='ml-4'>
                 <h3 className='font-medium'>{title}</h3>
                 <p className='text-gray-500'>{description}</p>

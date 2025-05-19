@@ -6,7 +6,7 @@ import TextCard from '../components/TextCard'
 import { CgWebsite } from 'react-icons/cg'
 import { IoIosRocket } from 'react-icons/io'
 import { CiMobile3 } from 'react-icons/ci'
-import { FaVrCardboard } from 'react-icons/fa'
+import { BsHeadsetVr } from 'react-icons/bs';
 import Newsletter from '../components/Newsletter'
 
 const About = () => {
@@ -32,8 +32,8 @@ const About = () => {
     },
     {
       id: 4,
-      icon: <FaVrCardboard />,
-      title: 'AR/VR',
+      icon: <BsHeadsetVr />,
+      title: 'AR / VR',
       style: 'text-[#900078] bg-[#FFE7FB]'
     }
   ]
@@ -81,9 +81,9 @@ const About = () => {
         <div className='w-full md:w-1/2'>
           <div className='grid grid-cols-2'>
             {services.map(({ id, title, icon, style }) => (
-              <div key={id} className='flex items-center justify-center'>
-                <div>{icon}</div>
-                <h3>{title}</h3>
+              <div key={id} className='flex items-center justify-center w-fit m-5'>
+                <div className={`p-4 rounded-2xl text-xl md:text-3xl ${style}`}>{icon}</div>
+                <h3 className='ml-5 text-gray-700 text-lg font-medium'>{title}</h3>
               </div>
             ))}
           </div>
