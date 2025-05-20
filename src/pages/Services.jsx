@@ -41,7 +41,7 @@ const Services = () => {
         <div className='bg-white p-3 rounded-full shadow-md mb-4'>
           <img src={speakerImg} alt='speaker_icon' className='w-10 h-10' />
         </div>
-        <h2 className='text-3xl font-bold'>
+        <h2 className='text-2xl md:text-3xl font-bold'>
           Our <span className='text-[#1090CB]'>Services</span>
         </h2>
         <p className='max-w-xl text-gray-500 mt-2 text-sm md:text-base'>
@@ -53,7 +53,7 @@ const Services = () => {
       <div className='max-w-5xl mx-auto bg-white rounded shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 mt-10'>
         {services.map(({ id, icon, title, description, style }, index) => (
           <div key={id} className={`flex items-center justify-center w-full my-3 md:my-0 md:p-5 ${(index === 0) ? 'md:border-b-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 1) ? 'md:border-b-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} ${(index === 2) ? 'md:border-t-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 3) ? 'md:border-t-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} `} >
-            <div className={`p-4 rounded-2xl text-lg md:text-xl ${style}`}>{icon}</div>
+            <div className={`p-4 rounded-2xl text-xl md:text-2xl ${style}`}>{icon}</div>
             <div className='ml-5'>
               <h3 className='text-gray-700 text-lg font-medium'>{title}</h3>
               <p className='text-sm text-gray-600 py-1'>{description}</p>
