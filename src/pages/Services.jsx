@@ -50,7 +50,7 @@ const Services = () => {
       </div>
 
       {/* Services Grid */}
-      <div className='max-w-5xl mx-auto bg-white rounded shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 mt-10'>
+      <div className='max-w-5xl mx-auto bg-white rounded shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 mt-10 border-'>
         {services.map(({ id, icon, title, description, style }) => (
           <div key={id} className='flex items-center justify-center w-fit m-5' >
             <div className={`p-4 rounded-2xl text-lg md:text-xl ${style}`}>{icon}</div>
