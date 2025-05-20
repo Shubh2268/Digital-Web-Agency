@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import heroImage from '../assets/home/heroImage.png'
 
 const Hero = () => {
@@ -11,8 +12,8 @@ const Hero = () => {
                     <p className='text-gray-600 md:text-lg mb-8'>Digitra is a modern web agency crafting high-performance websites and digital solutions that drive business growth. From design to deployment, we build with purpose and precision.</p>
 
                     <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
-                        <a href='#contact' className='px-8 py-2 bg-[#1090CB] text-white rounded-md font-medium transition active:scale-95 duration-300'>Contact Us</a>
-                        <a href='#view' className='px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300'>View more</a>
+                        <Link to='/contact' className='px-8 py-2 bg-[#1090CB] text-white rounded-md font-medium transition active:scale-95 duration-300'>Contact Us</Link>
+                        <Link to='/services' className='px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300'>View more</Link>
                     </div>
                 </div>
 
