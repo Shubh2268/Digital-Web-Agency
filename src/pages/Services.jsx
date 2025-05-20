@@ -1,4 +1,4 @@
-import { FaMobileAlt, FaRocket, FaGlobe, FaVrCardboard } from 'react-icons/fa';
+import { FaMobileAlt, FaRocket, FaGlobe, FaVrCardboard } from 'react-icons/fa'
 import speakerImg from '../assets/services/speakerImg.png'
 
 const Services = () => {
@@ -49,10 +49,10 @@ const Services = () => {
         </p>
       </div>
 
-      {/* Services Grid */}
-      <div className='max-w-5xl mx-auto bg-white rounded shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 mt-10 border-'>
-        {services.map(({ id, icon, title, description, style }) => (
-          <div key={id} className='flex items-center justify-center w-fit m-5' >
+      {/* Services */}
+      <div className='max-w-5xl mx-auto bg-white rounded shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 mt-10'>
+        {services.map(({ id, icon, title, description, style }, index) => (
+          <div key={id} className={`flex items-center justify-center w-full my-3 md:my-0 md:p-5 ${(index === 0) ? 'md:border-b-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 1) ? 'md:border-b-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} ${(index === 2) ? 'md:border-t-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 3) ? 'md:border-t-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} `} >
             <div className={`p-4 rounded-2xl text-lg md:text-xl ${style}`}>{icon}</div>
             <div className='ml-5'>
               <h3 className='text-gray-700 text-lg font-medium'>{title}</h3>
@@ -65,4 +65,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Services
