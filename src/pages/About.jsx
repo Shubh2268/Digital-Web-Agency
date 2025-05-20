@@ -83,7 +83,7 @@ const About = () => {
           <div className='grid grid-cols-1 md:grid-cols-2'>
             {services.map(({ id, title, icon, style }) => (
               <div key={id} className='flex items-center justify-center w-fit m-5'>
-                <div className={`p-4 rounded-2xl text-xl md:text-3xl ${style}`}>{icon}</div>
+                <div className={`p-4 rounded-2xl text-xl md:text-2xl lg:text-3xl ${style}`}>{icon}</div>
                 <h3 className='ml-5 text-gray-700 text-lg font-medium'>{title}</h3>
               </div>
             ))}
