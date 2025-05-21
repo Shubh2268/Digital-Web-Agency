@@ -66,7 +66,7 @@ const Services = () => {
 
       {/* Middle part  */}
       <div className='my-5 md:my-10 py-10'>
-        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12'>
+        <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12'>
 
           <div className='w-full lg:w-1/2 text-left'>
             <h1 className='text-xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight'>Transforming <span className='text-[#1090CB]'>Ideas</span> into <span className='text-[#1090CB]'>Impactful Digital Experiences</span> for Modern Brands</h1>
@@ -81,7 +81,7 @@ const Services = () => {
           </div>
 
           <div className='w-full lg:w-1/2'>
-            <img src={serviceImg} alt='service_poster' className='w-full max-w-md mx-auto lg:max-w-xl' />
+            <img src={serviceImg} alt='service_poster' className='w-full p-4 max-w-md mx-auto lg:max-w-lg' />
           </div>
         </div>
       </div>
