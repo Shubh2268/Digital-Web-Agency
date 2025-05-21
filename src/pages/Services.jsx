@@ -9,7 +9,7 @@ const Services = () => {
       id: 1,
       icon: <FaMobileAlt />,
       title: 'Mobile Applications',
-      description: 'Custom mobile apps that engage and perform across devices.',
+      description: 'Custom mobile apps that perform across devices.',
       style: 'bg-[#F1E8FF] text-[#6E00FA]'
     },
     {
@@ -30,7 +30,7 @@ const Services = () => {
       id: 4,
       icon: <FaVrCardboard />,
       title: 'AR/VR Solutions',
-      description: 'Immersive AR/VR to transform how users experience your brand.',
+      description: 'Immersive AR/VR experiences that elevate user interaction.',
       style: 'bg-[#FFE7FB] text-[#B50097]'
     }
   ]
@@ -52,12 +52,12 @@ const Services = () => {
       </div>
 
       {/* Services */}
-      <div className='max-w-5xl mx-auto bg-white rounded md:shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 -mt-24'>
+      <div className='max-w-4xl mx-auto bg-white rounded md:shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 -mt-24'>
         {services.map(({ id, icon, title, description, style }, index) => (
           <div key={id} className={`flex items-center justify-center w-full my-3 md:my-0 md:p-5 ${(index === 0) ? 'md:border-b-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 1) ? 'md:border-b-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} ${(index === 2) ? 'md:border-t-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 3) ? 'md:border-t-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} `} >
             <div className={`p-4 rounded-2xl text-xl md:text-2xl ${style}`}>{icon}</div>
             <div className='ml-5'>
-              <h3 className='text-gray-700 text-lg font-medium'>{title}</h3>
+              <h3 className='text-gray-700 text-lg font-semibold'>{title}</h3>
               <p className='text-sm text-gray-600 py-1'>{description}</p>
             </div>
           </div>
@@ -85,6 +85,8 @@ const Services = () => {
           </div>
         </div>
       </div>
+
+      {/* Bottom  */}
 
     </div>
   );
