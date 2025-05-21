@@ -35,22 +35,22 @@ const Services = () => {
 
 
   return (
-    <div className='w-full bg-blue-400/10 pt-28'>
+    <div>
       {/* Top Section*/}
-      <div className='flex flex-col items-center text-center px-4'>
+      <div className='flex flex-col items-center text-center px-4 w-full bg-blue-400/10 py-28'>
         <div className='bg-white p-3 rounded-full shadow-md mb-4'>
           <img src={speakerImg} alt='speaker_icon' className='w-10 h-10' />
         </div>
         <h2 className='text-2xl md:text-3xl font-bold'>
           Our <span className='text-[#1090CB]'>Services</span>
         </h2>
-        <p className='max-w-xl text-gray-500 mt-2 text-sm md:text-base'>
+        <p className='max-w-xl text-gray-500 my-2 md:my-4 text-sm md:text-base'>
           At Digitra, we deliver cutting-edge digital solutions designed to help your business grow, scale, and stand out in a competitive market.
         </p>
       </div>
 
       {/* Services */}
-      <div className='max-w-5xl mx-auto bg-white rounded md:shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 mt-10'>
+      <div className='max-w-5xl mx-auto bg-white rounded md:shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 -mt-24'>
         {services.map(({ id, icon, title, description, style }, index) => (
           <div key={id} className={`flex items-center justify-center w-full my-3 md:my-0 md:p-5 ${(index === 0) ? 'md:border-b-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 1) ? 'md:border-b-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} ${(index === 2) ? 'md:border-t-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 3) ? 'md:border-t-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} `} >
             <div className={`p-4 rounded-2xl text-xl md:text-2xl ${style}`}>{icon}</div>
