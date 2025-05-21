@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const Footer = () => {
     return (
-        <footer className='py-12 px-10 mt-10'>
+        <footer className='py-12 px-10 mt-10 border-t border-gray-400'>
             <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10'>
 
                 <div>
@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <hr className='text-gray-400 my-10' />
+            <hr className='text-gray-300 my-10' />
 
             <div className='text-center text-gray-600'>
                 Copyright © {new Date().getFullYear()} Digitra. All rights reserved.
