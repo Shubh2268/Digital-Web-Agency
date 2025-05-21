@@ -50,7 +50,7 @@ const Services = () => {
       </div>
 
       {/* Services */}
-      <div className='max-w-5xl mx-auto bg-white rounded shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 mt-10'>
+      <div className='max-w-5xl mx-auto bg-white rounded md:shadow-md overflow-hidden grid grid-cols-1 md:grid-cols-2 p-5 md:p-10 mt-10'>
         {services.map(({ id, icon, title, description, style }, index) => (
           <div key={id} className={`flex items-center justify-center w-full my-3 md:my-0 md:p-5 ${(index === 0) ? 'md:border-b-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 1) ? 'md:border-b-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} ${(index === 2) ? 'md:border-t-[0.5px] md:border-r-[0.5px] md:border-gray-200' : ''} ${(index === 3) ? 'md:border-t-[0.5px] md:border-l-[0.5px] md:border-gray-200' : ''} `} >
             <div className={`p-4 rounded-2xl text-xl md:text-2xl ${style}`}>{icon}</div>

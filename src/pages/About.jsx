@@ -72,14 +72,14 @@ const About = () => {
       </div>
 
       {/* Bottom  */}
-      <div className='flex flex-col lg:flex-row items-center justify-center mt-20 mb-32'>
+      <div className='flex flex-col lg:flex-row items-center justify-center mt-20 md:mb-32'>
         <div className='w-[90%] lg:w-1/2 md:ml-20 md:mr-10'>
           <TextCard heading='Driven by Creativity, Focused on Results' description="We believe in creating more than just beautiful interfaces — we build meaningful digital experiences. Our multidisciplinary team collaborates with forward-thinking brands to craft solutions that engage, inspire, and deliver real results. By blending creativity with strategy and technology, we help businesses grow with confidence in the digital era." className='flex flex-col items-center md:items-start' head_class='py-5 text-xl md:text-2xl font-bold text-gray-700' desc_class='text-gray-600' />
 
           <Link to='/contact' className='inline-block mt-7 px-5 md:px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] text-sm md:text-base rounded-md font-medium transition active:scale-95 duration-300 cursor-pointer'>Contact Us</Link>
         </div>
 
-        <div className='w-full lg:w-1/2 bg-white shadow-lg shadow-gray-300 p-5 md:p-10 mt-10 lg:mt-0'>
+        <div className='w-full lg:w-1/2 bg-white md:shadow-lg shadow-gray-300 p-5 md:p-10 mt-10 lg:mt-0'>
           <div className='grid grid-cols-1 md:grid-cols-2'>
             {services.map(({ id, title, icon, style }) => (
               <div key={id} className='flex items-center justify-center w-fit m-5'>
