@@ -65,18 +65,18 @@ const Services = () => {
       </div>
 
       {/* Middle part  */}
-      <div className='my-10 py-10'>
+      <div className='my-5 md:my-10 py-10'>
         <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12'>
 
-          <div className='w-full lg:w-1/2 text-center lg:text-left'>
-            <h1 className='text-xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight'>Transforming Ideas into Impactful Digital Experiences for Modern Brands</h1>
+          <div className='w-full lg:w-1/2 text-left'>
+            <h1 className='text-xl md:text-3xl font-bold text-gray-900 mb-3 leading-tight'>Transforming <span className='text-[#1090CB]'>Ideas</span> into <span className='text-[#1090CB]'>Impactful Digital Experiences</span> for Modern Brands</h1>
 
             <p className='text-gray-600 py-2'>At Digitra, we specialize in building intuitive, scalable, and high-performing digital products that align with your business goals. From strategy to execution, we help turn vision into measurable success.</p>
 
             <p className='text-gray-600 py-2'>Our mission is to transform bold ideas into impactful digital experiences that captivate users, drive engagement, and fuel long-term business growth.</p>
 
             <div className='flex justify-center lg:justify-start'>
-              <Link to='/contact' className='mt-4 px-8 py-2 bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300'>Contact Us</Link>
+              <Link to='/contact' className='mt-4 px-6 md:px-8 py-2 text-sm md:text-base bg-transparent border-2 border-[#1090CB] text-[#1090CB] rounded-md font-medium transition active:scale-95 duration-300'>Contact Us</Link>
             </div>
           </div>
 
