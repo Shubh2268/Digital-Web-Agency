@@ -110,11 +110,11 @@ const Services = () => {
 
       {/* Bottom  */}
       <div className='w-full bg-[#1090CB] text-white py-24'>
-        <div className='max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4'>
+        <div className='max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-5'>
           {stats.map(({ id, num, title }) => (
             <div key={id} className='flex flex-col items-center justify-center'>
-              <h2 className='text-3xl md:text-6xl font-bold'>{num}</h2>
-              <p className='py-1 font-medium'>{title}</p>
+              <h2 className='text-3xl md:text-6xl font-semibold'>{num}</h2>
+              <p className='py-1'>{title}</p>
             </div>
           ))}
         </div>
