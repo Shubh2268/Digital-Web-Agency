@@ -1,11 +1,13 @@
 import { FaSearch } from 'react-icons/fa'
+import blogPoster from '../assets/blog/blogPoster.png'
+import userImg1 from '../assets/blog/userImg1.png'
 
 const Blog = () => {
 
   const category = ['UI/UX Design', 'Web Development', 'Digital Marketing', 'AI & Automation', 'Product Updates'];
 
   return (
-    <div className='w-full pt-28 pb-10 px-4 md:px-8'>
+    <div className='w-full pt-24 md:pt-28 pb-10 px-4 md:px-8'>
 
       {/* Heading */}
       <div className='text-center mb-8'>
@@ -24,6 +26,30 @@ const Blog = () => {
         {category.map((tag, index) => (
           <button key={index} className='px-4 py-1 text-xs md:text-sm font-medium rounded-full bg-[#E7EFF3] text-[#1090CB] cursor-pointer'>{tag}</button>
         ))}
+      </div>
+
+      {/* Middle  */}
+      <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 my-16'>
+        <div className='w-full lg:w-1/2'>
+          <img src={blogPoster} alt='blog_poster' className='w-full max-w-md mx-auto lg:max-w-xl' />
+        </div>
+
+        <div className='w-full lg:w-1/2 text-center lg:text-left'>
+          <h2 className='text-xl font-semibold'>Why Responsive Design Is No Longer Optional in 2025</h2>
+          <p className='text-sm text-gray-600 py-2'>With mobile traffic dominating the web, responsive design is not a luxury, it's a necessity. Discover how responsive strategies enhance user experience and increase conversions.</p>
+
+          {/* Author & Date */}
+          <div className='flex items-center justify-between mt-2'>
+            <div className='flex items-center gap-3'>
+              <img src={userImg1}  alt='user_img' className='w-8 h-8 rounded-full'/>
+              <div>
+                <p className='text-sm font-semibold'>Emily Carter</p>
+                <p className='text-xs text-gray-600'>May 5, 2025</p>
+              </div>
+            </div>
+            <a href='#' className='text-[#1090CB] text-sm font-medium'>Read More</a>
+          </div>
+        </div>
       </div>
 
     </div>
