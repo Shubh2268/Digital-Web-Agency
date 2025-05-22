@@ -87,6 +87,14 @@ const Services = () => {
       </div>
 
       {/* Bottom  */}
+      <div className='w-full bg-[#1090CB] text-white py-28'>
+        <div className='max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4'>
+          <div>
+            <h2>6</h2>
+            <p>Countries</p>
+          </div>
+        </div>
+      </div>
 
     </div>
   );
