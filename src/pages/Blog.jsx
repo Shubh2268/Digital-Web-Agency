@@ -9,20 +9,20 @@ const Blog = () => {
 
       {/* Heading */}
       <div className='text-center mb-8'>
-        <h2 className='text-2xl md:text-3xl font-bold'>Latest Articles & Industry Insights</h2>
+        <h2 className='text-2xl md:text-3xl font-bold text-gray-800'>Latest Articles & Industry Insights</h2>
         <p className='text-gray-500 max-w-xl mx-auto mt-4 text-sm md:text-base'>From tech trends to creative strategies, our blog delivers valuable knowledge to keep you informed and inspired.</p>
       </div>
 
       {/* Search Bar */}
       <div className='max-w-md mx-auto my-4 relative'>
-        <input type='text' placeholder='search articles...' className='w-full py-2 px-4 rounded-md bg-gray-100 outline-none' />
+        <input type='text' placeholder='search articles...' className='w-full py-2 px-4 rounded-md bg-[#F1F1F1] outline-none' />
         <FaSearch className='absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-500 text-' />
       </div>
 
       {/* Category */}
       <div className='flex flex-wrap justify-center gap-3 mt-6'>
         {category.map((tag, index) => (
-          <button key={index} className='px-4 py-1 text-xs md:text-sm font-medium rounded-full bg-[#E7EFF3] text-[#1090CB]'>{tag}</button>
+          <button key={index} className='px-4 py-1 text-xs md:text-sm font-medium rounded-full bg-[#E7EFF3] text-[#1090CB] cursor-pointer'>{tag}</button>
         ))}
       </div>
 
