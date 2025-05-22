@@ -12,7 +12,7 @@ const Blog = () => {
       {/* Heading */}
       <div className='text-center mb-8'>
         <h2 className='text-2xl md:text-3xl font-bold text-gray-800'>Latest Articles & Industry Insights</h2>
-        <p className='text-gray-500 max-w-xl mx-auto mt-4 text-sm md:text-base'>From tech trends to creative strategies, our blog delivers valuable knowledge to keep you informed and inspired.</p>
+        <p className='text-gray-600 max-w-xl mx-auto mt-4 text-base'>From tech trends to creative strategies, our blog delivers valuable knowledge to keep you informed and inspired.</p>
       </div>
 
       {/* Search Bar */}
@@ -29,14 +29,14 @@ const Blog = () => {
       </div>
 
       {/* Middle  */}
-      <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-6 my-16'>
-        <div className='w-full lg:w-1/2'>
+      <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-6 lg:gap-12 my-20'>
+        <div className='w-full lg:w-2/5'>
           <img src={blogPoster} alt='blog_poster' className='w-full max-w-md mx-auto lg:max-w-lg rounded-md' />
         </div>
 
-        <div className='w-full lg:w-1/2 text-left'>
-          <h2 className='text-xl md:text-2xl text-gray-800 font-bold md:w-[90%]'>Why Responsive Design Is No Longer Optional in 2025</h2>
-          <p className='text-gray-600 py-2 md:w-4/5'>With users browsing on everything from smartphones to smart TVs, responsive design is essential, not optional. In 2025, ensuring your website adapts to every screen size is key to keeping users engaged, improving SEO, and staying ahead in a competitive digital world.</p>
+        <div className='w-full lg:w-3/5 text-left'>
+          <h2 className='text-xl md:text-2xl text-gray-800 font-bold'>Why Responsive Design Is No Longer Optional in 2025</h2>
+          <p className='text-gray-600 text-sm lg:text-base py-2 lg:py-4 xl:w-[90%]'>In today's fast-evolving digital landscape, users access websites from a variety of devices, phones, tablets, laptops, and even smart TVs. Responsive design is no longer a luxury but a necessity for delivering seamless user experiences across all screen sizes. In 2025, businesses that fail to adopt responsive design risk higher bounce rates, lower engagement, and lost revenue. Learn why optimizing for flexibility and accessibility is now a core pillar of modern web development.</p>
 
           {/* Author & Date */}
           <div className='flex items-center justify-between mt-2 w-4/5'>
