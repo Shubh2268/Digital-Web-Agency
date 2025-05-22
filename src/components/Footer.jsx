@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <hr className='text-gray-300 my-10' />
+            <hr className='text-gray-300 my-10 md:my-5' />
 
             <div className='text-center text-gray-600'>
                 Copyright © {new Date().getFullYear()} Digitra. All rights reserved.

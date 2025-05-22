@@ -87,7 +87,7 @@ const Services = () => {
       </div>
 
       {/* Middle part  */}
-      <div className='my-5 md:my-10 py-10'>
+      <div className='my-5 md:my-14 py-10'>
         <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12'>
 
           <div className='w-full lg:w-1/2 text-left'>
