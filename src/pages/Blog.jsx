@@ -29,17 +29,17 @@ const Blog = () => {
       </div>
 
       {/* Middle  */}
-      <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 my-16'>
+      <div className='max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-6 my-16'>
         <div className='w-full lg:w-1/2'>
-          <img src={blogPoster} alt='blog_poster' className='w-full max-w-md mx-auto lg:max-w-xl' />
+          <img src={blogPoster} alt='blog_poster' className='w-full max-w-md mx-auto lg:max-w-lg rounded-md' />
         </div>
 
-        <div className='w-full lg:w-1/2 text-center lg:text-left'>
-          <h2 className='text-xl font-semibold'>Why Responsive Design Is No Longer Optional in 2025</h2>
-          <p className='text-sm text-gray-600 py-2'>With mobile traffic dominating the web, responsive design is not a luxury, it's a necessity. Discover how responsive strategies enhance user experience and increase conversions.</p>
+        <div className='w-full lg:w-1/2 text-left'>
+          <h2 className='text-xl md:text-2xl text-gray-800 font-bold md:w-[90%]'>Why Responsive Design Is No Longer Optional in 2025</h2>
+          <p className='text-gray-600 py-2 md:w-4/5'>With users browsing on everything from smartphones to smart TVs, responsive design is essential, not optional. In 2025, ensuring your website adapts to every screen size is key to keeping users engaged, improving SEO, and staying ahead in a competitive digital world.</p>
 
           {/* Author & Date */}
-          <div className='flex items-center justify-between mt-2'>
+          <div className='flex items-center justify-between mt-2 w-4/5'>
             <div className='flex items-center gap-3'>
               <img src={userImg1}  alt='user_img' className='w-8 h-8 rounded-full'/>
               <div>
