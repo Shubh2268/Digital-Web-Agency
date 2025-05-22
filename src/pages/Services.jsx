@@ -35,6 +35,28 @@ const Services = () => {
     }
   ]
 
+  const stats = [
+    {
+      id: 1,
+      num: '6',
+      title: 'Countries'
+    },
+    {
+      id: 2,
+      num: '81',
+      title: 'Projects'
+    },
+    {
+      id: 3,
+      num: '7M',
+      title: 'Transactions'
+    },
+    {
+      id: 4,
+      num: '6000+',
+      title: 'Customers'
+    }
+  ]
 
   return (
     <div>
@@ -87,12 +109,14 @@ const Services = () => {
       </div>
 
       {/* Bottom  */}
-      <div className='w-full bg-[#1090CB] text-white py-28'>
+      <div className='w-full bg-[#1090CB] text-white py-24'>
         <div className='max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4'>
-          <div>
-            <h2>6</h2>
-            <p>Countries</p>
-          </div>
+          {stats.map(({ id, num, title }) => (
+            <div key={id} className='flex flex-col items-center justify-center'>
+              <h2 className='text-3xl md:text-6xl font-bold'>{num}</h2>
+              <p className='py-1 font-medium'>{title}</p>
+            </div>
+          ))}
         </div>
       </div>
 
