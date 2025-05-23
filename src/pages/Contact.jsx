@@ -44,11 +44,11 @@ const Contact = () => {
         </div>
 
         <form className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6'>
-          <input type='text' placeholder='First Name' className='p-4 rounded-md border border-gray-300 w-full' />
-          <input type='text' placeholder='Last Name' className='p-4 rounded-md border border-gray-300 w-full' />
-          <input type='email' placeholder='Email Address' className='md:col-span-2 p-4 rounded-md border border-gray-300 w-full' />
-          <textarea placeholder='Message' rows='5' className='md:col-span-2 p-4 rounded-md border border-gray-300 w-full'></textarea>
-          <div className='flex items-center justify-center'>
+          <input type='text' placeholder='First Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
+          <input type='text' placeholder='Last Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
+          <input type='email' placeholder='Email Address' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full' />
+          <textarea placeholder='Message' rows='5' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full'></textarea>
+          <div>
             <button className='bg-[#1090CB] text-white px-6 py-3 rounded-md transition'>Get in touch</button>
           </div>
         </form>
