@@ -39,7 +39,7 @@ const Contact = () => {
       {/* Bottom  */}
       <div className='bg-blue-400/10 py-16 px-6 lg:px-48'>
         <div className='text-center mb-10'>
-          <h3 className='text-2xl font-bold text-gray-900'>Say hello</h3>
+          <h3 className='text-3xl font-bold text-gray-700'>Say Hello!</h3>
           <p className='text-gray-600 text-lg mt-2'>Have an idea? Let's talk and make it happen.</p>
         </div>
 
