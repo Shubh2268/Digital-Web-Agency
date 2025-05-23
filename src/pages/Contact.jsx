@@ -43,7 +43,7 @@ const Contact = () => {
           <p className='text-gray-600 text-lg mt-2'>Have an idea? Let's talk and make it happen.</p>
         </div>
 
-        <form className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <form className='max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6'>
           <input type='text' placeholder='First Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
           <input type='text' placeholder='Last Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
           <input type='email' placeholder='Email Address' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full' />
