@@ -18,33 +18,33 @@ const Blog = () => {
       id: 1,
       title: 'Top 5 Web Development Frameworks in 2025',
       image: blogImg1,
-      text: "Explore the most powerful frameworks dominating the web development space in 2025 and how they're reshaping the digital world.",
+      text: "Explore the most powerful frameworks dominating the web development space in 2025 and how they're reshaping the digital world...",
       author: {
-        name: 'Sophia Ray',
+        name: 'Daniel Moore',
         image: userImg2,
-        date: '20.12.2024'
+        date: 'Oct 5 2024'
       }
     },
     {
       id: 2,
       title: 'How AI is Shaping the Future of UI Design',
       image: blogImg2,
-      text: "Discover how artificial intelligence is revolutionizing user interfaces by automating design workflows and enhancing personalization.",
+      text: "Discover how artificial intelligence is revolutionizing user interfaces by automating design workflows and enhancing personalization...",
       author: {
-        name: 'Daniel Moore',
+        name: 'Sophia Ray',
         image: userImg3,
-        date: '20.12.2024'
+        date: 'Aug 8 2024'
       }
     },
     {
       id: 3,
       title: 'Boost Your Business with Data-Driven Marketing',
       image: blogImg3,
-      text: "Learn the impact of data analytics in crafting targeted marketing strategies that drive growth and customer engagement.",
+      text: "Learn the impact of data analytics in crafting targeted marketing strategies that drive growth and customer engagement...",
       author: {
-        name: 'Emily Park',
+        name: 'Sam Park',
         image: userImg4,
-        date: '20.12.2024'
+        date: 'Jul 12 2024'
       }
     }
   ]
@@ -96,24 +96,27 @@ const Blog = () => {
       </div>
 
       {/* Blog Grid */}
-      <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-20'>
-        {blog.map(({ id, title, image, text, author }) => (
-          <div key={id} className='shadow-md rounded-xl overflow-hidden max-w-sm mx-auto'>
-            <img src={image} alt='' className='w-full h-60 object-cover rounded-t-xl' />
-            <div className='p-5'>
-              <h4 className='text-lg font-semibold text-gray-900 leading-tight'>{title}</h4>
-              <p className='text-sm text-gray-600 mt-2'>{text}</p>
-              <div className='flex items-center mt-4'>
-                <img src={author.image} alt={author.name} className='w-10 h-10 rounded-full' />
-                <div className='ml-3'>
-                  <p className='text-sm font-medium text-gray-800'>{author.name}</p>
-                  <p className='text-xs text-gray-500'>{author.date}</p>
+      <div className='max-w-7xl mx-auto my-20 md:my-32 md:px-4 xl:px-0'>
+        <h2 className='text-xl md:text-2xl text-gray-700 font-bold px-4 text-center md:text-left'>Our latest blogs</h2>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-6 my-5'>
+          {blog.map(({ id, title, image, text, author }) => (
+            <a href='#blog' key={id} className='shadow-md rounded-lg overflow-hidden max-w-xs md:max-w-sm mx-auto'>
+              <img src={image} alt='blog_img' className='w-full h-48 md:h-60 object-cover rounded-t-xl' />
+              <div className='px-5 py-8'>
+                <h4 className='text-lg font-bold text-gray-700'>{title}</h4>
+                <p className='text-sm md:text-base text-gray-600 mt-2'>{text}</p>
+                <div className='flex items-center mt-4'>
+                  <img src={author.image} alt={author.name} className='w-8 h-8 rounded-full' />
+                  <div className='ml-3'>
+                    <p className='text-sm font-medium text-gray-800'>{author.name}</p>
+                    <p className='text-xs text-gray-500'>{author.date}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </a>
+          ))}
 
+        </div>
       </div>
 
       {/* Newsletter  */}
