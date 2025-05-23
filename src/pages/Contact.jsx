@@ -49,7 +49,7 @@ const Contact = () => {
           <input type='email' placeholder='Email Address' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full' />
           <textarea placeholder='Message' rows='5' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full'></textarea>
           <div>
-            <button className='bg-[#1090CB] text-white px-6 py-3 rounded-md transition'>Get in touch</button>
+            <button className='bg-[#1090CB] text-white px-6 py-3 rounded-md transition cursor-pointer'>Get in touch</button>
           </div>
         </form>
       </div>
