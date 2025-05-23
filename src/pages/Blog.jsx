@@ -1,11 +1,53 @@
 import { FaSearch } from 'react-icons/fa'
 import blogPoster from '../assets/blog/blogPoster.png'
+import blogImg1 from '../assets/blog/blogImg1.png'
+import blogImg2 from '../assets/blog/blogImg2.png'
+import blogImg3 from '../assets/blog/blogImg3.png'
 import userImg1 from '../assets/blog/userImg1.png'
+import userImg2 from '../assets/blog/userImg2.png'
+import userImg3 from '../assets/blog/userImg3.png'
+import userImg4 from '../assets/blog/userImg4.png'
 import Newsletter from '../components/Newsletter'
 
 const Blog = () => {
 
   const category = ['UI/UX Design', 'Web Development', 'Digital Marketing', 'AI & Automation', 'Product Updates'];
+
+  const blog = [
+    {
+      id: 1,
+      title: 'Top 5 Web Development Frameworks in 2025',
+      image: blogImg1,
+      text: "Explore the most powerful frameworks dominating the web development space in 2025 and how they're reshaping the digital world.",
+      author: {
+        name: 'Sophia Ray',
+        image: userImg2,
+        date: '20.12.2024'
+      }
+    },
+    {
+      id: 2,
+      title: 'How AI is Shaping the Future of UI Design',
+      image: blogImg2,
+      text: "Discover how artificial intelligence is revolutionizing user interfaces by automating design workflows and enhancing personalization.",
+      author: {
+        name: 'Daniel Moore',
+        image: userImg3,
+        date: '20.12.2024'
+      }
+    },
+    {
+      id: 3,
+      title: 'Boost Your Business with Data-Driven Marketing',
+      image: blogImg3,
+      text: "Learn the impact of data analytics in crafting targeted marketing strategies that drive growth and customer engagement.",
+      author: {
+        name: 'Emily Park',
+        image: userImg4,
+        date: '20.12.2024'
+      }
+    }
+  ]
 
   return (
     <div className='w-full pt-24 md:pt-28'>
@@ -51,6 +93,27 @@ const Blog = () => {
             <a href='#' className='text-[#1090CB] text-sm font-medium'>Read More</a>
           </div>
         </div>
+      </div>
+
+      {/* Blog Grid */}
+      <div className='max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-20'>
+        {blog.map(({ id, title, image, text, author }) => (
+          <div key={id} className='shadow-md rounded-xl overflow-hidden max-w-sm mx-auto'>
+            <img src={image} alt='' className='w-full h-60 object-cover rounded-t-xl' />
+            <div className='p-5'>
+              <h4 className='text-lg font-semibold text-gray-900 leading-tight'>{title}</h4>
+              <p className='text-sm text-gray-600 mt-2'>{text}</p>
+              <div className='flex items-center mt-4'>
+                <img src={author.image} alt={author.name} className='w-10 h-10 rounded-full' />
+                <div className='ml-3'>
+                  <p className='text-sm font-medium text-gray-800'>{author.name}</p>
+                  <p className='text-xs text-gray-500'>{author.date}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+
       </div>
 
       {/* Newsletter  */}
