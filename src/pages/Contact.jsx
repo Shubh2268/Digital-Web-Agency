@@ -55,9 +55,9 @@ const Contact = () => {
           <input type='text' placeholder='First Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
           <input type='text' placeholder='Last Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
           <input type='email' placeholder='Email Address' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full' />
-          <textarea placeholder='Message' rows='5' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full'></textarea>
+          <textarea placeholder='Message...' rows='5' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full'></textarea>
           <div>
-            <button className='bg-[#1090CB] text-white font-medium px-6 py-3 rounded-md transition cursor-pointer'>Get in touch</button>
+            <button className='bg-[#1090CB] text-white font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition cursor-pointer'>Get in touch</button>
           </div>
         </form>
       </div>
