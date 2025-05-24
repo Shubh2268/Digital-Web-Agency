@@ -1,34 +1,38 @@
 import mapImg from '../assets/contact/mapImg.png'
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
+import { BiSolidPhoneCall } from 'react-icons/bi'
+import { IoLocationSharp } from 'react-icons/io5'
 
 const Contact = () => {
   return (
     <div>
       {/* Top  */}
-      <div className='py-28 lg:py-24 mt-5'>
+      <div className='py-20 lg:py-24 mt-5'>
         <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12'>
           <div className='w-full lg:w-1/2 text-center lg:text-left'>
-            <h2 className='text-3xl font-bold text-gray-700 mb-4'>Let's Collaborate</h2>
-            <p className='text-gray-600 lg:text-lg w-4/5'>We're here to help bring your ideas to life with seamless digital solutions tailored for you.</p>
+            <h2 className='text-2xl md:text-3xl font-bold text-gray-700 mb-4'>Let's Collaborate</h2>
+            <p className='text-gray-600 lg:text-lg w-full md:w-4/5'>We're here to help bring your ideas to life with seamless digital solutions tailored for you.</p>
 
             <div className='mt-10 flex flex-col-reverse md:flex-row items-center'>
-              <div className='flex items-center gap-4 md:px-3'>
-                <a href='#' className='text-blue-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaFacebookF className='w-4 h-4' /></a>
-                <a href='#' className='text-pink-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaInstagram className='w-4 h-4' /></a>
-                <a href='#' className='text-gray-900 p-2 rounded-full shadow-lg shadow-gray-300'><FaXTwitter className=' w-4 h-4' /></a>
-                <a href='#' className='text-blue-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaLinkedinIn className='w-4 h-4' /></a>
+              <div className='flex items-center gap-4 py-1 md:py-0 md:pr-3'>
+                <a href='#' className='text-blue-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaFacebookF className='w-3 h-3' /></a>
+                <a href='#' className='text-pink-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaInstagram className='w-3 h-3' /></a>
+                <a href='#' className='text-gray-900 p-2 rounded-full shadow-lg shadow-gray-300'><FaXTwitter className=' w-3 h-3' /></a>
+                <a href='#' className='text-blue-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaLinkedinIn className='w-3 h-3' /></a>
               </div>
 
-              <div className='border-l border-gray-300 h-6'></div>
+              <div className='hidden md:flex border-l border-gray-300 h-6'></div>
 
-              <div className='flex items-center space-x-2 md:px-3'>
-                <span className='text-gray-700'>📞 +91 12345 67890</span>
+              <div className='flex items-center space-x-2 py-2 md:py-0 md:px-3'>
+                <BiSolidPhoneCall />
+                <span className='text-gray-700'> +91 12345 67890</span>
               </div>
 
-              <div className='border-l border-gray-300 h-6'></div>
+              <div className='hidden md:flex border-l border-gray-300 h-6'></div>
 
-              <div className='flex items-center space-x-2 md:px-3'>
+              <div className='flex items-center space-x-2 py-2 md:py-0 md:px-3'>
+                <IoLocationSharp />
                 <span className='text-gray-700'> New Delhi, India</span>
               </div>
             </div>
