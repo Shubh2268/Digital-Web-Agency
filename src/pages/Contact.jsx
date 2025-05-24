@@ -6,32 +6,36 @@ const Contact = () => {
   return (
     <div>
       {/* Top  */}
-      <div className='bg-white py-28 px-6 lg:px-24'>
-        <div className='flex flex-col lg:flex-row justify-between items-center'>
-          <div className='mb-10 lg:mb-0 lg:max-w-xl'>
+      <div className='py-28 lg:py-24 mt-5'>
+        <div className='max-w-7xl mx-auto px-4 md:px-8 flex flex-col lg:flex-row items-center gap-12'>
+          <div className='w-full lg:w-1/2 text-center lg:text-left'>
             <h2 className='text-3xl font-bold text-gray-700 mb-4'>Let's Collaborate</h2>
-            <p className='text-gray-600 lg:text-lg'>We're here to help bring your ideas to life with seamless digital solutions tailored for you.</p>
+            <p className='text-gray-600 lg:text-lg w-4/5'>We're here to help bring your ideas to life with seamless digital solutions tailored for you.</p>
 
-            <div className='mt-10 flex items-center space-x-10'>
-              <div className='flex items-center gap-4'>
+            <div className='mt-10 flex flex-col-reverse md:flex-row items-center'>
+              <div className='flex items-center gap-4 md:px-3'>
                 <a href='#' className='text-blue-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaFacebookF className='w-4 h-4' /></a>
                 <a href='#' className='text-pink-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaInstagram className='w-4 h-4' /></a>
                 <a href='#' className='text-gray-900 p-2 rounded-full shadow-lg shadow-gray-300'><FaXTwitter className=' w-4 h-4' /></a>
                 <a href='#' className='text-blue-700 p-2 rounded-full shadow-lg shadow-gray-300'><FaLinkedinIn className='w-4 h-4' /></a>
               </div>
 
-              <div className='flex items-center space-x-2'>
+              <div className='border-l border-gray-300 h-6'></div>
+
+              <div className='flex items-center space-x-2 md:px-3'>
                 <span className='text-gray-700'>📞 +91 12345 67890</span>
               </div>
+
               <div className='border-l border-gray-300 h-6'></div>
-              <div className='flex items-center space-x-2'>
+
+              <div className='flex items-center space-x-2 md:px-3'>
                 <span className='text-gray-700'> New Delhi, India</span>
               </div>
             </div>
           </div>
 
-          <div>
-            <img src={mapImg} alt='map_img' className='max-w-xl' />
+          <div className='w-full lg:w-1/2'>
+            <img src={mapImg} alt='map_img' className='w-full max-w-md mx-auto lg:max-w-xl' />
           </div>
         </div>
       </div>
