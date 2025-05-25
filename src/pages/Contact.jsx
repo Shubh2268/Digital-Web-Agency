@@ -75,7 +75,7 @@ const Contact = () => {
           </div>
 
           <div className='md:col-span-2 flex justify-center mt-2'>
-            <button type='submit' className='bg-[#1090CB] text-white font-medium px-6 py-3 rounded-md hover:bg-[#0e7db3] transition'>Get in touch</button>
+            <button type='submit' className='bg-[#1090CB] text-white font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition active:scale-95 duration-300 cursor-pointer'>Get in touch</button>
           </div>
         </form>
       </div>
