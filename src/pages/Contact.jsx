@@ -55,22 +55,22 @@ const Contact = () => {
           
           <div className='flex flex-col'>
             <label htmlFor='firstName' className='mb-1 text-gray-700'>First Name</label>
-            <input type='text' id='firstName' name='firstName' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full' />
+            <input type='text' id='firstName' name='firstName' required className='px-4 py-3 rounded-md bg-white outline-none w-full' />
           </div>
 
           <div className='flex flex-col'>
             <label htmlFor='lastName' className='mb-1 text-gray-700'>Last Name</label>
-            <input type='text' id='lastName' name='lastName' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full' />
+            <input type='text' id='lastName' name='lastName' required className='px-4 py-3 rounded-md bg-white outline-none w-full' />
           </div>
 
           <div className='flex flex-col md:col-span-2'>
             <label htmlFor='email' className='mb-1 text-gray-700'>Email Address</label>
-            <input type='email' id='email' name='email' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full'/>
+            <input type='email' id='email' name='email' required className='px-4 py-3 rounded-md bg-white outline-none w-full'/>
           </div>
 
           <div className='flex flex-col md:col-span-2'>
             <label htmlFor='message' className='mb-1 text-gray-700'>Message</label>
-            <textarea id='message' name='message' rows='5' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full'
+            <textarea id='message' name='message' rows='5' required className='px-4 py-3 rounded-md bg-white outline-none w-full'
             ></textarea>
           </div>
 
