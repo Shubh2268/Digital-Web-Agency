@@ -6,12 +6,14 @@ import Services from './pages/Services'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
