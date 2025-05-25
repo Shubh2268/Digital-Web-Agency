@@ -52,16 +52,33 @@ const Contact = () => {
         </div>
 
         <form className='max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6'>
-          <input type='text' placeholder='First Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
-          <input type='text' placeholder='Last Name' className='px-4 py-3 rounded-md bg-white outline-none w-full' />
-          <input type='email' placeholder='Email Address' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full' />
-          <textarea placeholder='Message...' rows='5' className='md:col-span-2 px-4 py-3 rounded-md bg-white outline-none w-full'></textarea>
-          <div>
-            <button className='bg-[#1090CB] text-white font-medium px-4 md:px-6 py-2 md:py-3 rounded-md transition cursor-pointer'>Get in touch</button>
+          
+          <div className='flex flex-col'>
+            <label htmlFor='firstName' className='mb-1 text-gray-700'>First Name</label>
+            <input type='text' id='firstName' name='firstName' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full' />
+          </div>
+
+          <div className='flex flex-col'>
+            <label htmlFor='lastName' className='mb-1 text-gray-700'>Last Name</label>
+            <input type='text' id='lastName' name='lastName' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full' />
+          </div>
+
+          <div className='flex flex-col md:col-span-2'>
+            <label htmlFor='email' className='mb-1 text-gray-700'>Email Address</label>
+            <input type='email' id='email' name='email' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full'/>
+          </div>
+
+          <div className='flex flex-col md:col-span-2'>
+            <label htmlFor='message' className='mb-1 text-gray-700'>Message</label>
+            <textarea id='message' name='message' rows='5' required className='px-4 py-3 rounded-md bg-white border border-gray-300 outline-none w-full'
+            ></textarea>
+          </div>
+
+          <div className='md:col-span-2 flex justify-center mt-2'>
+            <button type='submit' className='bg-[#1090CB] text-white font-medium px-6 py-3 rounded-md hover:bg-[#0e7db3] transition'>Get in touch</button>
           </div>
         </form>
       </div>
-
 
     </div>
   )
