@@ -34,9 +34,9 @@ const Navbar = () => {
             {isOpen && (
                 <div className='md:hidden bg-white shadow-md text-center px-4 pb-4'>
                     {navLinks.map((link) => (
-                        <Link key={link} to={link=='home' ? '/' : link} className='block py-2 text-gray-700 font-medium transition capitalize'>{link}</Link>
+                        <Link key={link} to={link=='home' ? '/' : link} className='block py-2 text-gray-700 font-medium transition capitalize' onClick={() => setIsOpen(!isOpen)}>{link}</Link>
                     ))}
-                    <Link to='/contact' className='mt-2 inline-block w-fit text-center px-4 py-2 bg-[#1090CB] text-white rounded-md font-medium transition capitalize'>contact us</Link>
+                    <Link to='/contact' className='mt-2 inline-block w-fit text-center px-4 py-2 bg-[#1090CB] text-white rounded-md font-medium transition capitalize' onClick={() => setIsOpen(!isOpen)}>contact us</Link>
                 </div>
             )}
         </header>
