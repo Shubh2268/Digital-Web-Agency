@@ -109,7 +109,7 @@ const Services = () => {
       </div>
 
       {/* Bottom  */}
-      <div className='w-full bg-[#1090CB] text-white py-24'>
+      <div className='w-full bg-[#1090CB] text-white py-16 md:py-24'>
         <div className='max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-5'>
           {stats.map(({ id, num, title }) => (
             <div key={id} className='flex flex-col items-center justify-center'>
