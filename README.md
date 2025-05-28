@@ -39,3 +39,5 @@ This project replicates a pixel-perfect design based on a professional Figma lay
 👉 **Responsive Design**: Built with a mobile-first approach to ensure seamless user experience across all screen sizes.
 
 👉 **Clean Multi-Page Structure**: Includes dedicated sections for Home, About, Services, Blog, and Contact, designed for clarity and ease of navigation.
+
+👉 **Dynamic Navigation System**: Smart navbar highlighting active pages, auto-scrolls to top on navigation, and collapses automatically on mobile for improved usability.
