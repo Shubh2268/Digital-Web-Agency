@@ -33,3 +33,7 @@ Digitra is a modern and responsive digital agency landing page designed to deliv
 - Tailwind CSS
 
 ## <a name="features">🔋 Features</a>
+
+This project replicates a pixel-perfect design based on a professional Figma layout, featuring a polished multi-page experience including:
+
+👉 **Responsive Design**: Built with a mobile-first approach to ensure seamless user experience across all screen sizes.
