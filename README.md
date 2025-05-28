@@ -23,3 +23,5 @@
 
 
 ## <a name="introduction">🤖 Introduction</a>
+
+Digitra is a modern and responsive digital agency landing page designed to deliver a seamless user experience. It features a clean layout, real-world content, and fully functional multi-page design tailored for creative and professional businesses.
