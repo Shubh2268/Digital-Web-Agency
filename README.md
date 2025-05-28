@@ -45,3 +45,5 @@ This project replicates a pixel-perfect design based on a professional Figma lay
 👉 **Content Driven Layout**: Professionally crafted titles and real-world descriptions make the interface informative and engaging.
 
 👉 **Reusable Component Architecture**: Modular and maintainable code structure, ensuring scalability and easy updates.
+
+👉 **Modern Visual Design**: Includes image collages, icon-based service blocks, blog previews, and visual hierarchy inspired by industry best practices.
