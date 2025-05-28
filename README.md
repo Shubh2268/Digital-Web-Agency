@@ -31,6 +31,7 @@ Digitra is a modern and responsive digital agency landing page designed to deliv
 - Vite
 - React.Js
 - Tailwind CSS
+- Design - Free design from **Figma Community**
 
 ## <a name="features">🔋 Features</a>
 
