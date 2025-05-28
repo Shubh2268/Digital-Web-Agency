@@ -27,3 +27,7 @@
 Digitra is a modern and responsive digital agency landing page designed to deliver a seamless user experience. It features a clean layout, real-world content, and fully functional multi-page design tailored for creative and professional businesses.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- Vite
+- React.Js
+- Tailwind CSS
